@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%)
+}
+
+main {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    margin: 0 250px;
+}
+
+.secao-1 h1 {
+    font-size: 46px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.secao-1 p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.secao-1 {
+    margin: 0 auto;
+}
+
+.secao-2 {
+    margin: 0 auto;
+}
+
+.freeTrial-1{
+    color: #fff;
+    background: hsl(248, 32%, 49%);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.281);
+} 
+
+.freeTrial-1:hover {
+    background: hsl(248, 38%, 48%);
+}
+
+.freeTrial-2{
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    background: hsl(154, 59%, 51%);
+    cursor: pointer;
+    border: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.281);
+    text-transform: uppercase;
+}
+
+.freeTrial-2:hover {
+    background: hsl(154, 70%, 44%);
+}
+
+.secao-2 form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.281);
+
+}
+
+form p {
+    font-size: 12px;
+    color: rgb(156, 141, 141);
+    margin-top: 10px;
+    text-align: center;
+}
+
+form span {
+    color: red;
+}
+
+input {
+    height: 35px;
+    width: 400px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+input::placeholder {
+    font-weight: 700;
+}
+
+.attribution {
+     font-size: 11px; text-align: center; 
+}
+ 
+.attribution a {
+    text-decoration: none;
+     color: hsl(229, 27%, 92%); 
+}
+
+.attribution a:hover {
+    color: hsl(248, 38%, 48%);
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0 0 0;
+        height: 100%;
+    }
+
+    .secao-1 {
+        text-align: center;
+    }
+
+    .secao-1 h1 {
+        font-size: 28px;
+    }
+
+    .secao-1 p {
+        margin-top: 20px;
+        font-size: 16px;
+        width: 300px;
+    }
+
+    .secao-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .freeTrial-1 {
+        font-size: 14px;
+        width: 280px;
+        padding: 20px 10px;
+        border-radius: 10px;
+    }
+
+    .freeTrial-2 {
+        padding: 15px;
+    }
+
+   form {
+        width: 300px;
+        height: 370px;
+   }
+
+   input {
+        width: 285px;
+        height: 50px;
+   }
+
+   form p {
+        font-size: 12px;
+        margin-top: 15px;
+        color: rgb(171, 175, 175);
+   }
+
+   footer p {
+        display: none;
+   }
+
+}
+
+
